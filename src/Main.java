@@ -31,6 +31,7 @@ public class Main {
         mentoria.setDescricao("descrição mentoria java");
         mentoria.setData(LocalDate.now());
 
+
         System.out.println(curso1);
         System.out.println(curso2);
         System.out.println(curso3);
@@ -48,11 +49,16 @@ public class Main {
         devInacioMecena.setNome("Inácio Mecena");
         devInacioMecena.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos Inácio Mecena:" + devInacioMecena.getConteudosInscritos());
-        devInacioMecena.progredir();
-        devInacioMecena.progredir();
-        devInacioMecena.progredir();
-        devInacioMecena.progredir();
-        devInacioMecena.progredir();
+
+
+        int i = 1;
+        while(i < 4){
+            devInacioMecena.progredir();
+            i++;
+        }
+
+
+
         System.out.println("-");
         System.out.println("Conteúdos Inscritos Inácio Mecena:" + devInacioMecena.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos Inácio Mecena:" + devInacioMecena.getConteudosConcluidos());
