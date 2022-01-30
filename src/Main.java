@@ -21,6 +21,11 @@ public class Main {
         curso2.setDescricao("descrição curso js");
         curso2.setCargaHoraria(4);
 
+        Curso curso3 = new Curso();
+        curso3.setTitulo("curso PHP 7");
+        curso3.setDescricao("descrição curso php 7");
+        curso3.setCargaHoraria(60);
+
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("mentoria de java");
         mentoria.setDescricao("descrição mentoria java");
@@ -28,6 +33,7 @@ public class Main {
 
         System.out.println(curso1);
         System.out.println(curso2);
+        System.out.println(curso3);
         System.out.println(mentoria);
 
         Bootcamp bootcamp = new Bootcamp();
@@ -35,12 +41,16 @@ public class Main {
         bootcamp.setDescricao("Descrição Bootcamp Java Developer");
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(curso3);
         bootcamp.getConteudos().add(mentoria);
 
         Dev devInacioMecena = new Dev();
         devInacioMecena.setNome("Inácio Mecena");
         devInacioMecena.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos Inácio Mecena:" + devInacioMecena.getConteudosInscritos());
+        devInacioMecena.progredir();
+        devInacioMecena.progredir();
+        devInacioMecena.progredir();
         devInacioMecena.progredir();
         devInacioMecena.progredir();
         System.out.println("-");
