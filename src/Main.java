@@ -7,11 +7,14 @@ import java.time.LocalDate;
 
 // Revisão de Codigo.
 public class Main {
-    public static void main(String[] args) {
+    public static <string> void main(String[] args) {
+
+
+
         Curso curso1 = new Curso();
-        curso1.setTitulo("curso java");
+        curso1.setTitulo("curso java e appis");
         curso1.setDescricao("descrição curso java");
-        curso1.setCargaHoraria(8);
+        curso1.setCargaHoraria(58);
 
         Curso curso2 = new Curso();
         curso2.setTitulo("curso js");
@@ -23,9 +26,9 @@ public class Main {
         mentoria.setDescricao("descrição mentoria java");
         mentoria.setData(LocalDate.now());
 
-        /*System.out.println(curso1);
+        System.out.println(curso1);
         System.out.println(curso2);
-        System.out.println(mentoria);*/
+        System.out.println(mentoria);
 
         Bootcamp bootcamp = new Bootcamp();
         bootcamp.setNome("Bootcamp Java Developer");
@@ -34,23 +37,23 @@ public class Main {
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
 
-        Dev devCamila = new Dev();
-        devCamila.setNome("Camila");
-        devCamila.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        devCamila.progredir();
-        devCamila.progredir();
+        Dev devInacioMecena = new Dev();
+        devInacioMecena.setNome("Inácio Mecena");
+        devInacioMecena.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Inácio Mecena:" + devInacioMecena.getConteudosInscritos());
+        devInacioMecena.progredir();
+        devInacioMecena.progredir();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
-        System.out.println("XP:" + devCamila.calcularTotalXp());
+        System.out.println("Conteúdos Inscritos Inácio Mecena:" + devInacioMecena.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos Inácio Mecena:" + devInacioMecena.getConteudosConcluidos());
+        System.out.println("XP:" + devInacioMecena.calcularTotalXp());
 
         System.out.println("-------");
 
         Dev devJoao = new Dev();
         devJoao.setNome("Joao");
         devJoao.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
+        System.out.println("Conteúdos Inscritos Mecena:" + devJoao.getConteudosInscritos());
         devJoao.progredir();
         devJoao.progredir();
         devJoao.progredir();

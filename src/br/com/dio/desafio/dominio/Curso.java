@@ -17,17 +17,6 @@ public class Curso extends Conteudo{
     public Curso() {
     }
 
-/* Desabilitei o getter e setter pois passei a usar o lombok dai comentei o codigo abaixo.
-
-    public int getCargaHoraria() {
-        return cargaHoraria;
-    }
-
-    public void setCargaHoraria(int cargaHoraria) {
-        this.cargaHoraria = cargaHoraria;
-    }
-    */
-
     @Override
     public String toString() {
         return "Curso{" +
